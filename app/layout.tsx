@@ -3,9 +3,8 @@ import { EnvVarWarning } from "@/components/env-var-warning";
 import HeaderAuth from "@/components/header-auth";
 import { ThemeSwitcher } from "@/components/theme-switcher";
 import { hasEnvVars } from "@/utils/supabase/check-env-vars";
-import { GeistSans } from "geist/font/sans";
+import { libre_basker, raleway } from "@/app/fonts";
 import { ThemeProvider } from "next-themes";
-import Link from "next/link";
 import "./globals.css";
 
 const defaultUrl = process.env.VERCEL_URL
@@ -24,11 +23,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={GeistSans.className} suppressHydrationWarning>
+    <html lang="en" className={raleway.className} suppressHydrationWarning>
       <body className="bg-background text-foreground">
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >
@@ -37,10 +36,9 @@ export default function RootLayout({
               <nav className="w-full flex justify-center border-b border-b-foreground/10 h-16">
                 <div className="w-full max-w-5xl flex justify-between items-center p-3 px-5 text-sm">
                   <div className="flex gap-5 items-center font-semibold">
-                    <Link href={"/"}>Next.js Supabase Starter</Link>
-                    <div className="flex items-center gap-2">
-                      <DeployButton />
-                    </div>
+                    <h4 className={`text-2xl ${libre_basker.className}`}>
+                      VidyaVirtus
+                    </h4>
                   </div>
                   {!hasEnvVars ? <EnvVarWarning /> : <HeaderAuth />}
                 </div>
