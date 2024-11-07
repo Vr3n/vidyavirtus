@@ -1,0 +1,70 @@
+he Application name is VidyaVirtus where we are using  Libre Baskerville as Heading/Logo type, and Raleway font for body and other types.
+
+The tailwind color themes are: 
+
+alabaster (background), richblack (Foreground), argentinianblue (Primary), lavenderpink (secondary/tint)
+
+```jsx
+{
+  "colors": {
+    "alabaster": {
+      50: "#FAFBF9",
+      100: "#FAFBF9",
+      200: "#F3F4F1",
+      300: "#ECEDE8",
+      400: "#E7E9E2",
+      500: "#DFE1D8",
+      600: "#CBCEC0",
+      700: "#B1B6A0",
+      800: "#92997A",
+      900: "#6B7057",
+      950: "#4A4E3C"
+    },
+    "richblack": {
+      50: "#F5F4F5",
+      100: "#EAE7EA",
+      200: "#CFC9CF",
+      300: "#B0A5B0",
+      400: "#887788",
+      500: "#080708",
+      600: "#000000",
+      700: "#000000",
+      800: "#000000",
+      900: "#000000",
+      950: "#000000"
+    },
+    "argentinianblue": {
+      50: "#F1F8FE",
+      100: "#E7F3FD",
+      200: "#CBE4FB",
+      300: "#AFD5F8",
+      400: "#8EC4F6",
+      500: "#63ADF2",
+      600: "#439CEF",
+      700: "#1886EC",
+      800: "#1171CA",
+      900: "#0C5192",
+      950: "#093A68"
+    },
+    "lavenderpink": {
+      50: "#FFFAFD",
+      100: "#FFF5FA",
+      200: "#FFEBF5",
+      300: "#FFDBEE",
+      400: "#FFD1E9",
+      500: "#FFC2E2",
+      600: "#FFA3D3",
+      700: "#FF7ABF",
+      800: "#FF339C",
+      900: "#C70067",
+      950: "#94004C"
+    }
+  }
+}
+```
+
+Create a User Profile page for a Skill Gap analysis software where
+
+- The Profile picture, full name, date of birth, Current Skill, and Target skill should be visible.
+- A skill list with switchable view of table/card should be below the personal details.
+- The projects and its description should also be visible with the same view types as Skill list.
